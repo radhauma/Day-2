@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<script> 
+$(document).ready(function() {
+  
+  // Fade Out (jQuery) //
+  $('#fadeoutButton').click(function() {
+    $('#fadeIcon').fadeOut();
+  });
+  
+  // Fade In (jQuery) //
+  $('#fadeinButton').click(function() {
+    $('#fadeIcon').fadeIn();
+  });
+  
+  // Hide (jQuery) //
+  $('#hideButton').click(function() {
+    $('#hideIcon').hide();
+  });
+  
+  // Show (jQuery) //
+  $('#showButton').click(function() {
+    $('#hideIcon').show();
+  });
+  
+  // Explode (jQuery UI) //
+  $('#explodeButton').click(function() {
+    $('#explodeIcon').effect('explode');
+  });
+  
+  // Show Explode (jQuery UI) //
+  $('#showExplodeButton').click(function() {
+    $('#explodeIcon').show();
+  });
+  
+  // Bounce (jQuery UI) //
+  
+  $("#bounceButton").click(function() {
+    $('#bounceIcon').effect('bounce', {times:5}, 1000);
+  });
+  
+  // Slide (jQuery UI) //
+  
+  $("#slideButton").click(function() {
+    $('#slideIcon').effect('slide')
+  });
+  
+  // Blind (jQuery UI) //
+  
+  $("#blindButton").click(function() {
+    $('#blindIcon').effect('blind');
+  });
+  
+  // Restore Blind //
+  
+  $("#restoreBlindButton").click(function() {
+    $('#blindIcon').show();
+  });
+  
+  // Clip //
+  
+  $("#clipButton").click(function() {
+    $('#clipIcon').effect('clip');
+  });
+  
+  // Restore Clip //
+  
+  $("#restoreClipButton").click(function() {
+    $("#clipIcon").show();
+  });
+  
+  // Drop //
+  
+  $("#dropButton").click(function() {
+    $("#dropIcon").effect('drop');
+  });
+  
+  // Drop Restore //
+  
+  $("#restoreDropButton").click(function() {
+    $("#dropIcon").show();
+  });
+  
+  // Fold //
+  
+  $("#foldButton").click(function() {
+    $("#foldIcon").effect('fold').position('center');
+  });
+  
+  // Fold Restore //
+  
+  $("#restoreFoldButton").click(function() {
+    $("#foldIcon").show();
+  });
+  
+   // Highlight //
+  
+  $("#highlightButton").click(function() {
+    $("#highlightIcon").effect('highlight');
+  });
+  
+  // Puff //
+  
+  $("#puffButton").click(function() {
+    $("#puffIcon").effect('puff');
+  });
+  
+  // Fold Restore //
+  
+  $("#restorePuffButton").click(function() {
+    $("#puffIcon").show();
+  });
+  
+    // Pulsate //
+  
+  $("#pulsateButton").click(function() {
+    $("#pulsateIcon").effect('pulsate');
+  });
+  
+  // Scale //
+  
+  $("#scaleButton").click(function() {
+    $("#scaleIcon").effect('scale');
+  });
+  
+  // Shake //
+  
+  $("#shakeButton").click(function() {
+    $("#shakeIcon").effect('shake');
+  });
+  
+   // Size //
+  
+  $("#sizeButton").click(function() {
+    $("#sizeIcon").effect('size');
+  });
+  
+  // Transfer //
+  
+  $("#transferButton").click(function() {
+    $("#transferIcon").effect('transfer');
+  });
+  
+});
+</script> 
+<style>
+body {
+  align: center;
+  text-align: center;
+}
+#showIcon {
+  display: none;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  margin-left: 20%;
+  margin-right: 22%;
+}
+</style>
+</head>
+<body>
+<h2 class = "text-center">jQuery UI Effects</h1>
+  <h5>Except for Hide/Show, these are from the <a href = "https://jqueryui.com">jQuery UI library</a>.</h6>
+  <h6>Transfer, Scale, and Size not working correctly.</h7>
+  <br><br>
+  <div class = "row">
+    
+    <!-- Hide and Show -->
+    
+  <div class = "col-md-2">
+  <button id = "hideButton">Hide</button>
+  <button id = "showButton">Show</button>
+  <br><br>
+  <img id = "hideIcon" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Windows_live_square.JPG"/>
+  </div>
+    
+  <!-- Fade Out and Fade In -->
+    
+  <div class = "col-md-2">
+  <button id = "fadeoutButton">Fade Out</button>
+    <button id = "fadeinButton">Fade In</button>
+  <br><br>
+  <img id = "fadeIcon" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Windows_live_square.JPG"/>
+  </div>
+    
+  <!-- Explode Button -->
+    
+    <div class = "col-md-2">
+  <button id = "explodeButton">Explode</button>
+  <button id = "showExplodeButton">Restore</button>
+  <br><br>
+  <img id = "explodeIcon" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Windows_live_square.JPG"/>
+  </div>
+    
+  <!-- Bounce Button -->
+  <div class = "col-md-2">
+    <button id = "bounceButton">Bounce</button>
+    <br><br>
+    <img id = "bounceIcon" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Windows_live_square.JPG"/>
+    </div>
+    
+    <!-- Slide Button -->
+    <div class = "col-md-2">
+      <button id = "slideButton">Slide</button>
+      <br><br>
+      <img id = "slideIcon" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Windows_live_square.JPG"/>
+    </div>
+    
+    <!-- Blind Button -->
+    <div class = "col-md-2">
+      <button id = "blindButton">Blind</button>
+      <button id = "restoreBlindButton">Restore</button>
+      <br><br>
+      <img id = "blindIcon" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Windows_live_square.JPG"/>
+    </div>
+  </div>
+  <br><br>
+  
+  <div class = "row">
+    
+    <!-- Clip Button -->
+    <div class = "col-md-2">
+      <button id = "clipButton">Clip</button>
+      <button id = "restoreClipButton">Restore</button>
+      <br><br>
+      <img id = "clipIcon" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Windows_live_square.JPG"/>
+    </div>
+    
+    <!-- Drop Button -->
+    <div class = "col-md-2">
+      <button id = "dropButton">Drop</button>
+      <button id = "restoreDropButton">Restore</button>
+      <br><br>
+      <img id = "dropIcon" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Windows_live_square.JPG"/>
+    </div>
+    
+    <!-- Fold Button -->
+  <div class = "col-md-2">
+      <button id = "foldButton">Fold</button>
+      <button id = "restoreFoldButton">Restore</button>
+      <br><br>
+      <img id = "foldIcon" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Windows_live_square.JPG"/>
+    </div>
+    
+    <!-- Highlight Button -->
+  <div class = "col-md-2">
+      <button id = "highlightButton">Highlight</button>
+      <br><br>
+    <h3 id = 'highlightIcon'/>This text will be highlighted.</h3>
+    </div>
+  
+   <!-- Highlight Button -->
+  <div class = "col-md-2">
+      <button id = "puffButton">Puff</button>
+    <button id = "restorePuffButton">Restore</button>
+      <br><br>
+    <img id = "puffIcon" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Windows_live_square.JPG"/>
+    </div>
+  
+  <!-- Highlight Button -->
+  <div class = "col-md-2">
+      <button id = "pulsateButton">Pulsate</button>
+      <br><br>
+    <img id = "pulsateIcon" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Windows_live_square.JPG"/>
+    </div>
+  </div><br><br>
+
+<div class = "row">
+  
+  <!-- Shake Button -->
+  <div class = "col-md-2">
+      <button id = "shakeButton">Shake</button>
+      <br><br>
+    <img id = "shakeIcon" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Windows_live_square.JPG"/>
+    </div>
+    
+   <!-- Scale Button -->
+  <div class = "col-md-2">
+      <button id = "scaleButton">Scale</button>
+      <br><br>
+    <img id = "scaleIcon" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Windows_live_square.JPG"/>
+    </div>
+  
+  <!-- Size Button -->
+  <div class = "col-md-2">
+      <button id = "sizeButton">Size</button>
+      <br><br>
+    <img id = "sizeIcon" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Windows_live_square.JPG"/>
+    </div>
+  
+   <!-- Transfer Button -->
+  <div class = "col-md-2">
+      <button id = "transferButton">Transfer</button>
+      <br><br>
+    <img id = "transferIcon" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Windows_live_square.JPG"/>
+    </div>
+	
+	</body>
+	</html>
